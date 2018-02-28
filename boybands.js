@@ -8,15 +8,16 @@ const bandElement = document.getElementById("boy-bands");
 const veggieElement = document.getElementById("vegetables");
 
 // Execute a for loop that will iterate over the arrays
-for (let loopTracker = 0; loopTracker < ???; loopTracker += 1) {
-
+for (let loopTracker = 0; loopTracker < 5; loopTracker += 1) {
+console.log("hey Dylan");
   // Get a reference to the current item in the bands array
-  const currentBand = ???;
+  const currentBand = bands[loopTracker] + `<br>`;
 
   // Update the innerHTML value of the DOM element for bands
-
+bandElement.innerHTML += currentBand;
   // Get a reference to the current item in the vegetables array
-  const currentVeggie = ???;
+  const currentVeggie = vegetables[loopTracker] + `<br>`;
 
   // Update the innerHTML value of the DOM element for vegetables
+  veggieElement.innerHTML += currentVeggie;
 }
